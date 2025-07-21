@@ -1,0 +1,20 @@
+package testFrais;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+class TestCalculFrais {
+
+	@Test
+	void test() throws MonException {
+		CalculFrais f = new CalculFrais();
+		assertEquals(f.montant(600.0),0.0,0.0001);
+	}
+	@Test()
+	void test2() throws MonException {
+			assertThrows(MonException.class, () -> {
+				CalculFrais f = new CalculFrais();
+				f.montant(-600.0);
+		     });
+		
+	}
+}
