@@ -3,7 +3,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class TestCalculFrais {
-
+	// mon premier test
 	@Test
 	void test() throws MonException {
 		CalculFrais f = new CalculFrais();
