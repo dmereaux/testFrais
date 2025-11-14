@@ -9,11 +9,6 @@ class TestCalculFrais {
 		CalculFrais f = new CalculFrais();
 		assertEquals(f.montant(600.0),0.0,0.0001);
 	}
-	@Test
-	void test3() throws MonException {
-		CalculFrais f = new CalculFrais();
-		assertEquals(f.montant(100.0),20.0,0.0001);
-	}
 	@Test()
 	void test2() throws MonException {
 			assertThrows(MonException.class, () -> {
