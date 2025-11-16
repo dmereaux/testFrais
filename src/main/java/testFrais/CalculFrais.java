@@ -1,6 +1,6 @@
 package testFrais;
 
-import java.io.IOException;
+
 
 public class CalculFrais  {
 	

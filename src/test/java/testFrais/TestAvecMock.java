@@ -3,10 +3,12 @@ package testFrais;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.easymock.EasyMock;
+//import static org.easymock.EasyMock.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class TestAvecMock {
+	
 	paramAppli mock;
 	
 	@BeforeEach
@@ -22,7 +24,7 @@ public class TestAvecMock {
 		EasyMock.expect(mock.getLimit1()).andReturn(100.0);
 		EasyMock.replay(mock);
 		CalculFrais f = new CalculFrais(mock);
-		assertEquals(f.montant(600.0),0.0,0.0001);
+		assertEquals(f.montant(301.0),0.0,0.0001);
 
 	}
 
