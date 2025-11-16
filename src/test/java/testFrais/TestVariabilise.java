@@ -9,7 +9,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 class TestVariabilise {
 
 	@ParameterizedTest
-	@CsvFileSource(resources="donnees.csv",numLinesToSkip=1)
+	@CsvFileSource(resources="./donnees.csv",numLinesToSkip=1)
 	void test(double total, double frais) throws MonException {
 		CalculFrais f = new CalculFrais();
 		assertEquals(f.montant(total),frais,0.0001);
