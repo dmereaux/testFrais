@@ -14,12 +14,13 @@ public class TestAvecMock {
 	@BeforeEach
 	public void setUp()
 	{
-		mock = EasyMock.createMock(paramAppli.class);
+		this.mock = EasyMock.createMock(paramAppli.class);
 				
 	}
 	@Test
 	public void test1() throws MonException
 	{
+
 		EasyMock.expect(mock.getLimit2()).andReturn(300.0);
 		EasyMock.expect(mock.getLimit1()).andReturn(100.0);
 		EasyMock.replay(mock);

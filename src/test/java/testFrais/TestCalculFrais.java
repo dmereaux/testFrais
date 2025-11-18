@@ -7,8 +7,11 @@ class TestCalculFrais {
 	@Test
 	void testNominal1() throws MonException {
 		CalculFrais f = new CalculFrais();
-		assertEquals(f.montant(600.0),0.0,0.0001);
+		assertEquals(f.montant(600.0),0.0,0.0001,"message ne cas d'erreur");
 	}
+
+
+	
 	@Test
 	void testNominal2() throws MonException {
 		CalculFrais f = new CalculFrais();
