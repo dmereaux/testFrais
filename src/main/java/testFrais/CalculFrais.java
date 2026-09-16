@@ -6,7 +6,7 @@ public class CalculFrais  {
 	
 	private double limit1;
 	private double limit2;
-	private MonException e;
+
 	
 
 	
