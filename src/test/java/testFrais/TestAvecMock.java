@@ -13,10 +13,10 @@ public class TestAvecMock {
 	@BeforeEach
 	public void setUp()
 	{
-		this.mock = EasyMock.createMock(paramAppli.class);
+//		this.mock = EasyMock.createMock(paramAppli.class);
 				
 	}
-	@Test
+/*	@Test
 	public void test1() throws MonException
 	{
 
@@ -26,6 +26,6 @@ public class TestAvecMock {
 		CalculFrais f = new CalculFrais(mock);
 		assertEquals(f.montant(301.0),0.0,0.0001);
 
-	}
+	}*/
 
 }

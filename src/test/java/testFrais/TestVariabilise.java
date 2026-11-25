@@ -14,5 +14,6 @@ class TestVariabilise {
 		CalculFrais f = new CalculFrais();
 		assertEquals(f.montant(total),frais,0.0001);
 	}
+	
 
 }
